@@ -13,6 +13,8 @@ git clone https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B
 cd Nous-Hermes-2-SOLAR-10.7B
 # Download actual files
 git lfs pull
+# Or one-by-one as bandwidth allows:
+# git lfs pull --include model-00001-of-00005.safetensors
 
 # See docs at https://github.com/ollama/ollama/blob/main/docs/import.md#Importing-a-model-from-Safetensors-weights
 touch Modelfile <<< 'FROM .'
