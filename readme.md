@@ -25,3 +25,11 @@ ollama create Nous-Hermes-2-SOLAR-10.7B
 ollama run Nous-Hermes-2-SOLAR-10.7B
 
 ```
+
+Other models tested
+```bash
+ollama run qwen2     # 7b
+ollama run solar-pro # 22b
+ollama run phi3:14b  # 24b
+
+```
