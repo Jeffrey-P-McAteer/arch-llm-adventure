@@ -4,6 +4,12 @@
 sudo pacman -S ollama
 ```
 
+# Infrastructure
+
+```bash
+ollama serve
+```
+
 # Model Setup Steps
 
 ```bash
@@ -17,7 +23,7 @@ git lfs pull
 # git lfs pull --include model-00001-of-00005.safetensors
 
 # See docs at https://github.com/ollama/ollama/blob/main/docs/import.md#Importing-a-model-from-Safetensors-weights
-touch Modelfile <<< 'FROM .'
+cat > Modelfile <<< 'FROM .'
 
 # "Nous-Hermes-2-SOLAR-10.7B" may be any identifier
 ollama create Nous-Hermes-2-SOLAR-10.7B
